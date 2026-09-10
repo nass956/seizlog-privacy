@@ -3,45 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SeizLog – Privacy Policy</title>
+  <title>SeizLog — Privacy Policy</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 24px; color: #1a1a2e; line-height: 1.75; }
-    h1 { color: #8B5CF6; font-size: 2rem; margin-bottom: 4px; }
-    h2 { color: #5B3FC8; margin-top: 2rem; }
-    p, li { font-size: 1rem; }
-    a { color: #8B5CF6; }
-    .updated { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
-    footer { margin-top: 3rem; color: #aaa; font-size: 0.85rem; border-top: 1px solid #eee; padding-top: 1rem; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0E0B1E;
+      color: #e2e8f0;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 2rem; font-weight: 800; color: #C4B5FD; margin-bottom: 8px; }
+    .badge { display: inline-block; background: rgba(139,92,246,0.18); color: #C4B5FD; border-radius: 20px; padding: 4px 14px; font-size: 0.8rem; font-weight: 600; margin-bottom: 32px; }
+    h2 { font-size: 1.1rem; font-weight: 700; color: #ffffff; margin: 32px 0 12px; border-left: 3px solid #8B5CF6; padding-left: 14px; }
+    p, li { color: #9ca3af; font-size: 0.95rem; margin-bottom: 10px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    strong { color: #e2e8f0; }
+    .disclaimer {
+      background: rgba(251,146,60,0.1);
+      border: 1px solid rgba(251,146,60,0.3);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 24px 0;
+    }
+    .disclaimer p { color: #fb923c; margin: 0; font-size: 0.9rem; }
+    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #2E2855; color: #4b5563; font-size: 0.8rem; text-align: center; }
+    a { color: #8B5CF6; text-decoration: none; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy – SeizLog</h1>
-  <p class="updated"><strong>Last updated:</strong> September 10, 2026</p>
+  <div class="wrap">
+    <h1>SeizLog Privacy Policy</h1>
+    <span class="badge">Last updated: September 2026</span>
 
-  <p>SeizLog ("the App") is a personal seizure diary designed to help individuals track their epilepsy. Your privacy is our highest priority.</p>
+    <div class="disclaimer">
+      <p>⚕️ <strong>Medical Disclaimer:</strong> SeizLog is not a medical device. It does not diagnose, treat, or prevent any condition. Always consult your healthcare provider before making medical decisions. In an emergency, call emergency services immediately.</p>
+    </div>
 
-  <h2>1. Data Storage</h2>
-  <p>All data you enter in SeizLog — seizures, medications, notes, and settings — is stored <strong>exclusively on your device</strong> using local SQLite storage. No personal health data is ever transmitted to our servers or shared with any third party.</p>
+    <h2>1. Data We Collect</h2>
+    <p>SeizLog stores the following data <strong>locally on your device only</strong>:</p>
+    <ul>
+      <li>Seizure logs (date, time, duration, type, symptoms, notes)</li>
+      <li>Medication information (name, dose, schedule)</li>
+      <li>App settings and preferences (e.g., whether you have accepted this disclaimer)</li>
+    </ul>
+    <p><strong>We do not collect, transmit, or store any personal data on external servers.</strong> All data remains exclusively on your device.</p>
 
-  <h2>2. Data We Collect</h2>
-  <p>SeizLog itself does <strong>not</strong> collect, store, or transmit any personal information.</p>
-  <p>For automatic app updates, we use Expo's update service (<a href="https://expo.dev">expo.dev</a>). This service may collect limited technical information such as app version, device platform, and anonymous crash diagnostics to ensure the app functions correctly. This data is <strong>not linked to your identity</strong>. See <a href="https://expo.dev/privacy">Expo's Privacy Policy</a>.</p>
+    <h2>2. Data We Do NOT Collect</h2>
+    <ul>
+      <li>No personal identifiers (name, email, phone number, or account information)</li>
+      <li>No location data</li>
+      <li>No contacts, camera, or microphone access</li>
+      <li>No HealthKit or Apple Health data</li>
+      <li>No advertising or marketing data</li>
+      <li>No biometric data</li>
+    </ul>
 
-  <h2>3. Push Notifications</h2>
-  <p>If you enable notifications for medication reminders, these are processed entirely on your device using Apple's notification system. No notification content is transmitted to our servers.</p>
+    <h2>3. Automatic Network Requests</h2>
+    <p>SeizLog makes limited, non-personal network requests at startup:</p>
+    <ul>
+      <li>
+        <strong>Version check:</strong> The app fetches a small JSON file from
+        <code>raw.githubusercontent.com/nass956/seizlog/main/version.json</code>
+        to determine if a mandatory update is available. This request contains
+        no personal data — only the request itself is sent (standard HTTPS).
+      </li>
+      <li>
+        <strong>Over-the-Air (OTA) updates:</strong> The app uses
+        <a href="https://expo.dev" target="_blank" rel="noopener">Expo Updates</a>
+        (<code>u.expo.dev</code>) to deliver JavaScript bundle updates silently
+        in the background. No personal data is associated with these requests
+        beyond standard HTTPS metadata (IP address, timestamp).
+      </li>
+    </ul>
+    <p>Neither of these requests includes health data, seizure logs, or any identifiable information.</p>
 
-  <h2>4. Health Data</h2>
-  <p>SeizLog does <strong>not</strong> integrate with Apple Health and does not share your health data with any third party. All health information remains private on your device.</p>
+    <h2>4. Third-Party Services</h2>
+    <p>SeizLog uses the following third-party technologies:</p>
+    <ul>
+      <li><strong>Expo / React Native:</strong> App runtime framework. See <a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Privacy Policy</a>.</li>
+      <li><strong>SQLite (local):</strong> On-device database. No external access.</li>
+    </ul>
+    <p>SeizLog does <strong>not</strong> use analytics, crash reporting services, advertising SDKs, or social media integrations.</p>
 
-  <h2>5. Children's Privacy</h2>
-  <p>SeizLog does not knowingly collect any data from users under the age of 13.</p>
+    <h2>5. Data Security</h2>
+    <p>All data is stored locally in an SQLite database on your device, protected by the device's built-in security (iOS Secure Enclave, data encryption at rest). We do not have access to your data and cannot retrieve or restore it if your device is lost or reset.</p>
 
-  <h2>6. Changes to This Policy</h2>
-  <p>We may update this privacy policy occasionally. Continued use of the app following any changes constitutes your acceptance of the new terms.</p>
+    <h2>6. Children's Privacy</h2>
+    <p>SeizLog does not knowingly collect any data from children under 13. Since all data is stored locally and we collect no personal information, the app can be used by caregivers to log seizure data for children under medical supervision.</p>
 
-  <h2>7. Contact</h2>
-  <p>If you have questions about this privacy policy, contact us at: <a href="mailto:contact@just4work.fr">contact@just4work.fr</a></p>
+    <h2>7. Your Rights</h2>
+    <p>Since all data is stored locally on your device:</p>
+    <ul>
+      <li><strong>Access:</strong> You can view all your data directly within the app.</li>
+      <li><strong>Deletion:</strong> You can delete any seizure or medication entry at any time. Uninstalling the app permanently removes all data.</li>
+      <li><strong>Portability:</strong> Export features may be available in future versions.</li>
+    </ul>
 
-  <footer>&copy; 2026 SeizLog. All rights reserved.</footer>
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top of this page reflects the most recent revision. Continued use of SeizLog after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>9. Contact</h2>
+    <p>If you have questions about this Privacy Policy, please contact us at:
+      <a href="mailto:support@seizlog.app">support@seizlog.app</a>
+    </p>
+
+    <footer>
+      <p>© 2026 SeizLog. All rights reserved.</p>
+      <p style="margin-top:8px">
+        <a href="https://nass956.github.io/seizlog-privacy/">Privacy Policy</a>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
