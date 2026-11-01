@@ -3,110 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SeizLog — Support</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0E0B1E;
-      color: #e2e8f0;
-      line-height: 1.7;
-      padding: 40px 20px;
-    }
-    .wrap { max-width: 680px; margin: 0 auto; }
-    h1 { font-size: 2rem; font-weight: 800; color: #C4B5FD; margin-bottom: 8px; }
-    .badge { display: inline-block; background: rgba(139,92,246,0.18); color: #C4B5FD; border-radius: 20px; padding: 4px 14px; font-size: 0.8rem; font-weight: 600; margin-bottom: 32px; }
-    h2 { font-size: 1.05rem; font-weight: 700; color: #ffffff; margin: 28px 0 10px; border-left: 3px solid #8B5CF6; padding-left: 14px; }
-    p, li { color: #9ca3af; font-size: 0.95rem; margin-bottom: 8px; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    strong { color: #e2e8f0; }
-    .contact-card {
-      background: rgba(139,92,246,0.1);
-      border: 1px solid rgba(139,92,246,0.3);
-      border-radius: 14px;
-      padding: 20px 24px;
-      margin: 24px 0;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-    .contact-card a {
-      color: #C4B5FD;
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-    }
-    .contact-card a:hover { text-decoration: underline; }
-    .faq-item { margin-bottom: 24px; }
-    .faq-q { color: #ffffff; font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
-    .faq-a { color: #9ca3af; font-size: 0.9rem; }
-    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #2E2855; color: #4b5563; font-size: 0.8rem; text-align: center; }
-    a { color: #8B5CF6; }
-  </style>
+  <meta name="color-scheme" content="light dark" />
+  <title>SeizLog — Help &amp; Support</title>
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <div class="wrap">
-    <h1>SeizLog Support</h1>
-    <span class="badge">Version 1.0.0</span>
+    <h1>SeizLog — Help &amp; Support</h1>
+    <p class="meta">Version 1.1 · English · Français · Deutsch · Español</p>
 
-    <div class="contact-card">
-      <div>
-        <p style="color:#C4B5FD; font-weight:600; margin-bottom:4px;">📧 Contact us</p>
-        <a href="mailto:contact@just4work.com">contact@just4work.com</a>
-        <p style="font-size:0.8rem; margin-top:6px; margin-bottom:0">We aim to respond within 48 hours.</p>
-      </div>
+    <div class="card">
+      <p><strong>Contact</strong> — <a href="mailto:contact@just4work.com">contact@just4work.com</a></p>
+      <p style="margin:0">We usually answer within 48 hours, in English or French. Please include your device model and iOS version.</p>
     </div>
 
-    <h2>About SeizLog</h2>
-    <p>SeizLog is a personal seizure diary that helps people with epilepsy log and track their seizures. All data is stored <strong>locally on your device</strong> — no account, no cloud, no data sharing.</p>
-    <p style="color:#fb923c; font-size:0.85rem;">⚕️ SeizLog is not a medical device and does not provide medical advice. Always consult your healthcare provider.</p>
+    <p>SeizLog is a private seizure diary for people with epilepsy and their caregivers. There is no account: your diary stays on your iPhone.</p>
+    <div class="note"><p>SeizLog is not a medical device and does not give medical advice. Always talk to your doctor. In an emergency, call your local emergency number.</p></div>
 
-    <h2>Frequently Asked Questions</h2>
+    <h2>Frequently asked questions</h2>
 
-    <div class="faq-item">
-      <p class="faq-q">Where is my data stored?</p>
-      <p class="faq-a">All your seizure and medication data is stored exclusively on your device using a local SQLite database. We have no access to your data. Uninstalling the app permanently deletes all data.</p>
-    </div>
+    <h3>Where is my data stored?</h3>
+    <p>Only on your device, in the app's local database. The developer never receives it. Like all app data, it may be included in your iPhone backup (iCloud or computer) depending on your iOS settings.</p>
 
-    <div class="faq-item">
-      <p class="faq-q">Can I export my seizure logs?</p>
-      <p class="faq-a">Export is planned for a future version. Currently, data can be shown directly in the app to share with your neurologist.</p>
-    </div>
+    <h3>How do I log a seizure that already happened?</h3>
+    <p>Tap the “+” button, then “Log a past seizure instead”. You can pick the real date and time.</p>
 
-    <div class="faq-item">
-      <p class="faq-q">The app won't open / crashes at launch</p>
-      <p class="faq-a">Try force-closing the app and reopening it. If the issue persists, try restarting your device. If it still fails, please email us at <a href="mailto:contact@just4work.com">contact@just4work.com</a> with your device model and iOS version.</p>
-    </div>
+    <h3>How do I edit or delete an entry?</h3>
+    <p>Open the Journal tab, tap the entry, then tap Edit. Delete is at the bottom of the entry.</p>
 
-    <div class="faq-item">
-      <p class="faq-q">How do I delete a seizure entry?</p>
-      <p class="faq-a">Go to the History tab, tap on the seizure entry, then tap the delete button on the detail screen.</p>
-    </div>
+    <h3>How do I share my diary with my doctor?</h3>
+    <p>In the Trends tab, tap the export icon at the top right. Choose a PDF summary or a CSV file (for a spreadsheet), then send it with the iOS share sheet.</p>
 
-    <div class="faq-item">
-      <p class="faq-q">Is SeizLog available on Android?</p>
-      <p class="faq-a">Android support is planned for a future release.</p>
-    </div>
+    <h3>How do I back up or move my diary to a new iPhone?</h3>
+    <p>Home › Settings (gear icon) › Back up: save the file where you like (Files, AirDrop, e-mail). On the new iPhone, install SeizLog, then Settings › Restore and choose the file. SeizLog also keeps a daily copy in Files › On My iPhone › SeizLog.</p>
 
-    <div class="faq-item">
-      <p class="faq-q">What seizure types does SeizLog support?</p>
-      <p class="faq-a">SeizLog uses the ILAE 2017 seizure classification, covering focal, generalized, and unknown onset seizures, with sub-types for each category.</p>
-    </div>
+    <h3>Medication reminders don't appear</h3>
+    <p>Check iOS Settings › Notifications › SeizLog and make sure notifications are allowed. Reminder times can be changed in the Treatment tab.</p>
 
-    <div class="faq-item">
-      <p class="faq-q">I found a bug. How do I report it?</p>
-      <p class="faq-a">Please email <a href="mailto:contact@just4work.com">contact@just4work.com</a> with a description of the issue, your device model, and iOS version. Screenshots are welcome.</p>
-    </div>
+    <h3>How do I change the language?</h3>
+    <p>SeizLog follows your iPhone language. You can also choose one in Settings › Language.</p>
+
+    <h3>What seizure types does SeizLog use?</h3>
+    <p>The ILAE 2017 operational classification: focal, generalized and unknown onset. Sources are listed in Settings › Sources.</p>
+
+    <h3>Is SeizLog available on Android?</h3>
+    <p>Not yet.</p>
+
+    <h3>I found a bug</h3>
+    <p>E-mail <a href="mailto:contact@just4work.com">contact@just4work.com</a> with a short description, your device model and iOS version. Screenshots help.</p>
 
     <h2>Links</h2>
     <ul>
-      <li><a href="index.html">Privacy Policy</a></li>
+      <li><a href="../">Privacy policy</a></li>
       <li><a href="https://apps.apple.com/app/id6810493365">SeizLog on the App Store</a></li>
     </ul>
 
     <footer>
-      <p>© 2026 SeizLog. All rights reserved.</p>
+      <p>© 2026 Just4Work</p>
     </footer>
   </div>
 </body>

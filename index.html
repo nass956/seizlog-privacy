@@ -3,118 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
   <title>SeizLog — Privacy Policy</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: #0E0B1E;
-      color: #e2e8f0;
-      line-height: 1.7;
-      padding: 40px 20px;
-    }
-    .wrap { max-width: 720px; margin: 0 auto; }
-    h1 { font-size: 2rem; font-weight: 800; color: #C4B5FD; margin-bottom: 8px; }
-    .badge { display: inline-block; background: rgba(139,92,246,0.18); color: #C4B5FD; border-radius: 20px; padding: 4px 14px; font-size: 0.8rem; font-weight: 600; margin-bottom: 32px; }
-    h2 { font-size: 1.1rem; font-weight: 700; color: #ffffff; margin: 32px 0 12px; border-left: 3px solid #8B5CF6; padding-left: 14px; }
-    p, li { color: #9ca3af; font-size: 0.95rem; margin-bottom: 10px; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    strong { color: #e2e8f0; }
-    .disclaimer {
-      background: rgba(251,146,60,0.1);
-      border: 1px solid rgba(251,146,60,0.3);
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin: 24px 0;
-    }
-    .disclaimer p { color: #fb923c; margin: 0; font-size: 0.9rem; }
-    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #2E2855; color: #4b5563; font-size: 0.8rem; text-align: center; }
-    a { color: #8B5CF6; text-decoration: none; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="wrap">
-    <h1>SeizLog Privacy Policy</h1>
-    <span class="badge">Last updated: September 2026</span>
-
-    <div class="disclaimer">
-      <p>⚕️ <strong>Medical Disclaimer:</strong> SeizLog is not a medical device. It does not diagnose, treat, or prevent any condition. Always consult your healthcare provider before making medical decisions. In an emergency, call emergency services immediately.</p>
-    </div>
-
-    <h2>1. Data We Collect</h2>
-    <p>SeizLog stores the following data <strong>locally on your device only</strong>:</p>
-    <ul>
-      <li>Seizure logs (date, time, duration, type, symptoms, notes)</li>
-      <li>Medication information (name, dose, schedule)</li>
-      <li>App settings and preferences (e.g., whether you have accepted this disclaimer)</li>
-    </ul>
-    <p><strong>We do not collect, transmit, or store any personal data on external servers.</strong> All data remains exclusively on your device.</p>
-
-    <h2>2. Data We Do NOT Collect</h2>
-    <ul>
-      <li>No personal identifiers (name, email, phone number, or account information)</li>
-      <li>No location data</li>
-      <li>No contacts, camera, or microphone access</li>
-      <li>No HealthKit or Apple Health data</li>
-      <li>No advertising or marketing data</li>
-      <li>No biometric data</li>
+    <h1>SeizLog — Privacy Policy</h1>
+    <p class="meta">Last updated: 1 November 2026 · Publisher: Just4Work · Contact: <a href="mailto:contact@just4work.com">contact@just4work.com</a></p>
+    <ul class="langs">
+      <li><a href="#en" lang="en">English</a></li>
+      <li><a href="#fr" lang="fr">Français</a></li>
+      <li><a href="#de" lang="de">Deutsch</a></li>
+      <li><a href="#es" lang="es">Español</a></li>
     </ul>
 
-    <h2>3. Automatic Network Requests</h2>
-    <p>SeizLog makes limited, non-personal network requests at startup:</p>
-    <ul>
-      <li>
-        <strong>Version check:</strong> The app fetches a small JSON file from
-        <code>raw.githubusercontent.com/nass956/seizlog/main/version.json</code>
-        to determine if a mandatory update is available. This request contains
-        no personal data — only the request itself is sent (standard HTTPS).
-      </li>
-      <li>
-        <strong>Over-the-Air (OTA) updates:</strong> The app uses
-        <a href="https://expo.dev" target="_blank" rel="noopener">Expo Updates</a>
-        (<code>u.expo.dev</code>) to deliver JavaScript bundle updates silently
-        in the background. No personal data is associated with these requests
-        beyond standard HTTPS metadata (IP address, timestamp).
-      </li>
-    </ul>
-    <p>Neither of these requests includes health data, seizure logs, or any identifiable information.</p>
+    <!-- English -->
+    <section id="en" lang="en">
+      <h2>English</h2>
+      <p><strong>In short: SeizLog has no account and the developer never receives your diary.</strong></p>
+      <h3>What you enter</h3>
+      <p>Seizures, medications, doses, notes and settings are stored only on your device, in the app's local database. The developer has no access to them. There is no account, no analytics, no advertising and no tracking. SeizLog does not use Apple Health.</p>
+      <h3>Network use</h3>
+      <p>When it starts, the app reads a public file (<code>https://nass956.github.io/seizlog-privacy/version.json</code>) to check whether a newer version is available. No personal or health data is sent. As with any web request, the hosting provider (GitHub) receives technical connection data such as the IP address.</p>
+      <h3>Notifications</h3>
+      <p>Medication reminders are local notifications scheduled on your device. No server is involved. They do not show medication names on the lock screen.</p>
+      <h3>Exports and backups</h3>
+      <p>PDF, CSV and backup files are created only when you ask for them. You choose where they go through the iOS share sheet; once shared, they are no longer controlled by the app. SeizLog also keeps a daily copy of your diary on your device, visible in Files › On My iPhone › SeizLog. Like all app data, your diary may be included in your device backup (iCloud or computer) depending on your iOS settings.</p>
+      <h3>Deleting your data</h3>
+      <p>You can delete any entry in the app. Deleting the app erases its database and the daily copy on the device, but not files you have exported elsewhere.</p>
+      <h3>Children</h3>
+      <p>SeizLog does not knowingly collect data from anyone; parents may keep a diary for their child on their own device.</p>
+      <div class="note"><p><strong>Medical disclaimer.</strong> SeizLog is a personal diary, not a medical device. It does not diagnose, detect, predict or treat seizures and does not give medical advice.</p></div>
+      <h3>Changes</h3>
+      <p>We will update this page if anything changes and show the date above.</p>
+    </section>
 
-    <h2>4. Third-Party Services</h2>
-    <p>SeizLog uses the following third-party technologies:</p>
-    <ul>
-      <li><strong>Expo / React Native:</strong> App runtime framework. See <a href="https://expo.dev/privacy" target="_blank" rel="noopener">Expo Privacy Policy</a>.</li>
-      <li><strong>SQLite (local):</strong> On-device database. No external access.</li>
-    </ul>
-    <p>SeizLog does <strong>not</strong> use analytics, crash reporting services, advertising SDKs, or social media integrations.</p>
+    <!-- Français -->
+    <section id="fr" lang="fr">
+      <h2>Français</h2>
+      <p class="meta">Dernière mise à jour : 1er novembre 2026 · Éditeur : Just4Work · Contact : <a href="mailto:contact@just4work.com">contact@just4work.com</a></p>
+      <p><strong>En bref : SeizLog n'a pas de compte et le développeur ne reçoit jamais votre journal.</strong></p>
+      <h3>Ce que vous saisissez</h3>
+      <p>Crises, médicaments, prises, notes et réglages sont enregistrés uniquement sur votre appareil, dans la base de données locale de l'app. Le développeur n'y a pas accès. Aucun compte, aucune statistique d'usage, aucune publicité, aucun pistage. SeizLog n'utilise pas Apple Santé.</p>
+      <h3>Connexions réseau</h3>
+      <p>Au lancement, l'app lit un fichier public (<code>https://nass956.github.io/seizlog-privacy/version.json</code>) pour savoir si une nouvelle version existe. Aucune donnée personnelle ou de santé n'est envoyée. Comme pour toute requête web, l'hébergeur (GitHub) reçoit des données techniques de connexion, comme l'adresse IP.</p>
+      <h3>Notifications</h3>
+      <p>Les rappels de médicaments sont des notifications locales, programmées sur votre appareil, sans serveur. Ils n'affichent pas le nom des médicaments sur l'écran verrouillé.</p>
+      <h3>Exports et sauvegardes</h3>
+      <p>Les fichiers PDF, CSV et de sauvegarde ne sont créés qu'à votre demande. Vous choisissez leur destination via la feuille de partage d'iOS ; une fois partagés, ils ne sont plus contrôlés par l'app. SeizLog garde aussi une copie quotidienne de votre journal sur l'appareil, visible dans Fichiers › Sur mon iPhone › SeizLog. Comme toutes les données des apps, votre journal peut être inclus dans la sauvegarde de l'appareil (iCloud ou ordinateur) selon vos réglages iOS.</p>
+      <h3>Supprimer vos données</h3>
+      <p>Vous pouvez supprimer chaque entrée dans l'app. Supprimer l'app efface sa base de données et la copie quotidienne, mais pas les fichiers exportés ailleurs.</p>
+      <h3>Enfants</h3>
+      <p>SeizLog ne collecte sciemment aucune donnée ; un parent peut tenir le journal de son enfant sur son propre appareil.</p>
+      <div class="note"><p><strong>Avertissement médical.</strong> SeizLog est un journal personnel, pas un dispositif médical. Il ne pose aucun diagnostic, ne détecte ni ne prédit les crises et ne donne aucun conseil médical.</p></div>
+      <h3>Modifications</h3>
+      <p>Cette page sera mise à jour en cas de changement, avec la date ci-dessus.</p>
+    </section>
 
-    <h2>5. Data Security</h2>
-    <p>All data is stored locally in an SQLite database on your device, protected by the device's built-in security (iOS Secure Enclave, data encryption at rest). We do not have access to your data and cannot retrieve or restore it if your device is lost or reset.</p>
+    <!-- Deutsch -->
+    <section id="de" lang="de">
+      <h2>Deutsch</h2>
+      <p class="meta">Stand: 1. November 2026 · Anbieter: Just4Work · Kontakt: <a href="mailto:contact@just4work.com">contact@just4work.com</a></p>
+      <p><strong>Kurz gesagt: SeizLog hat kein Konto, und der Entwickler erhält Ihr Tagebuch nie.</strong></p>
+      <h3>Ihre Eingaben</h3>
+      <p>Anfälle, Medikamente, Einnahmen, Notizen und Einstellungen werden nur auf Ihrem Gerät in der lokalen Datenbank der App gespeichert. Der Entwickler hat keinen Zugriff. Kein Konto, keine Nutzungsstatistik, keine Werbung, kein Tracking. SeizLog nutzt Apple Health nicht.</p>
+      <h3>Netzwerk</h3>
+      <p>Beim Start liest die App eine öffentliche Datei (<code>https://nass956.github.io/seizlog-privacy/version.json</code>), um zu prüfen, ob eine neue Version verfügbar ist. Es werden keine persönlichen oder Gesundheitsdaten gesendet. Wie bei jeder Webanfrage erhält der Hoster (GitHub) technische Verbindungsdaten wie die IP-Adresse.</p>
+      <h3>Mitteilungen</h3>
+      <p>Medikamenten-Erinnerungen sind lokale Mitteilungen, die auf Ihrem Gerät geplant werden, ohne Server. Auf dem Sperrbildschirm werden keine Medikamentennamen angezeigt.</p>
+      <h3>Exporte und Sicherungen</h3>
+      <p>PDF-, CSV- und Sicherungsdateien entstehen nur auf Ihren Wunsch. Sie wählen das Ziel über das iOS-Teilen-Menü; nach dem Teilen kontrolliert die App die Datei nicht mehr. SeizLog behält außerdem eine tägliche Kopie auf dem Gerät, sichtbar unter Dateien › Auf meinem iPhone › SeizLog. Wie alle App-Daten kann Ihr Tagebuch je nach iOS-Einstellungen im Geräte-Backup (iCloud oder Computer) enthalten sein.</p>
+      <h3>Daten löschen</h3>
+      <p>Jeder Eintrag lässt sich in der App löschen. Das Löschen der App entfernt die Datenbank und die tägliche Kopie, nicht aber bereits exportierte Dateien.</p>
+      <h3>Kinder</h3>
+      <p>SeizLog erhebt wissentlich keine Daten; Eltern können das Tagebuch ihres Kindes auf ihrem eigenen Gerät führen.</p>
+      <div class="note"><p><strong>Medizinischer Hinweis.</strong> SeizLog ist ein persönliches Tagebuch und kein Medizinprodukt. Es stellt keine Diagnose, erkennt oder sagt keine Anfälle voraus und gibt keine medizinischen Ratschläge.</p></div>
+      <h3>Änderungen</h3>
+      <p>Diese Seite wird bei Änderungen aktualisiert; das Datum steht oben.</p>
+    </section>
 
-    <h2>6. Children's Privacy</h2>
-    <p>SeizLog does not knowingly collect any data from children under 13. Since all data is stored locally and we collect no personal information, the app can be used by caregivers to log seizure data for children under medical supervision.</p>
-
-    <h2>7. Your Rights</h2>
-    <p>Since all data is stored locally on your device:</p>
-    <ul>
-      <li><strong>Access:</strong> You can view all your data directly within the app.</li>
-      <li><strong>Deletion:</strong> You can delete any seizure or medication entry at any time. Uninstalling the app permanently removes all data.</li>
-      <li><strong>Portability:</strong> Export features may be available in future versions.</li>
-    </ul>
-
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top of this page reflects the most recent revision. Continued use of SeizLog after changes constitutes acceptance of the updated policy.</p>
-
-    <h2>9. Contact</h2>
-    <p>If you have questions about this Privacy Policy, please contact us at:
-      <a href="mailto:contact@just4work.com">contact@just4work.com</a>
-    </p>
+    <!-- Español -->
+    <section id="es" lang="es">
+      <h2>Español</h2>
+      <p class="meta">Última actualización: 1 de noviembre de 2026 · Editor: Just4Work · Contacto: <a href="mailto:contact@just4work.com">contact@just4work.com</a></p>
+      <p><strong>En resumen: SeizLog no tiene cuenta y el desarrollador nunca recibe su diario.</strong></p>
+      <h3>Lo que usted registra</h3>
+      <p>Crisis, medicamentos, tomas, notas y ajustes se guardan solo en su dispositivo, en la base de datos local de la app. El desarrollador no tiene acceso. Sin cuenta, sin estadísticas de uso, sin publicidad y sin rastreo. SeizLog no utiliza Apple Salud.</p>
+      <h3>Uso de la red</h3>
+      <p>Al abrirse, la app lee un archivo público (<code>https://nass956.github.io/seizlog-privacy/version.json</code>) para saber si hay una versión nueva. No se envía ningún dato personal ni de salud. Como en cualquier petición web, el proveedor de alojamiento (GitHub) recibe datos técnicos de conexión, como la dirección IP.</p>
+      <h3>Notificaciones</h3>
+      <p>Los recordatorios de medicación son notificaciones locales programadas en su dispositivo, sin servidor. No muestran nombres de medicamentos en la pantalla bloqueada.</p>
+      <h3>Exportaciones y copias de seguridad</h3>
+      <p>Los archivos PDF, CSV y de copia de seguridad solo se crean cuando usted lo pide. Usted elige su destino con la hoja de compartir de iOS; una vez compartidos, la app ya no los controla. SeizLog también guarda una copia diaria en el dispositivo, visible en Archivos › En mi iPhone › SeizLog. Como todos los datos de las apps, su diario puede incluirse en la copia del dispositivo (iCloud u ordenador) según sus ajustes de iOS.</p>
+      <h3>Eliminar sus datos</h3>
+      <p>Puede eliminar cualquier registro en la app. Eliminar la app borra su base de datos y la copia diaria, pero no los archivos exportados a otros lugares.</p>
+      <h3>Menores</h3>
+      <p>SeizLog no recopila datos de nadie a sabiendas; los padres pueden llevar el diario de su hijo en su propio dispositivo.</p>
+      <div class="note"><p><strong>Aviso médico.</strong> SeizLog es un diario personal, no un dispositivo médico. No diagnostica, no detecta ni predice crisis y no ofrece consejo médico.</p></div>
+      <h3>Cambios</h3>
+      <p>Esta página se actualizará si algo cambia, con la fecha indicada arriba.</p>
+    </section>
 
     <footer>
-      <p>© 2026 SeizLog. All rights reserved.</p>
-      <p style="margin-top:8px">
-        <a href="https://nass956.github.io/seizlog-privacy/">Privacy Policy</a>
-      </p>
+      <p><a href="support/">Help &amp; support</a> · <a href="mailto:contact@just4work.com">contact@just4work.com</a></p>
+      <p>© 2026 Just4Work</p>
     </footer>
   </div>
 </body>
